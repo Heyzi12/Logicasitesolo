@@ -1,0 +1,26 @@
+-- database: ../catalog.db
+
+SELECT * FROM users;
+
+CREATE TABLE users(
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE,
+    password TEXT NOT NULL
+);
+
+CREATE TABLE articles(
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    description TEXT, 
+    text TEXT,
+    image TEXT DEFAULT 'img/developer.png',
+    seller_id INTEGER NOT NULL REFERENCES users(id),
+    category_id INTEGER NOT NULL REFERENCES categories(id)
+);
+
+CREATE TABLE categories(
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    title TEXT
+);
+

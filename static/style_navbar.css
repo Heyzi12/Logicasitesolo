@@ -1,0 +1,49 @@
+.icon_shop{
+    padding-left: 5px;
+    block-size: 1,1cm;
+}
+.Zagolovok{
+    font-size: 25px;
+    top:8px;
+    position: relative;
+    
+}
+.Home{
+    font-size: 23px;
+    font-weight: 400;
+    right: 12px;
+    position: relative;
+}
+.navbar-nav{
+    position:relative;
+    top: 3px;
+}
+.Categories{
+    font-size: 23px;
+    font-weight: 400;
+    right: 10px;
+    position: relative;
+}
+.Soon{
+    font-size: 23px;
+    font-weight: 400;
+    right: 8px;
+    position: relative;
+}
+.Search{
+    font-size: 23px;
+    font-weight: 400;
+    top:5px;
+    right: 9px;
+    position: relative;
+}
+.Search1{
+    font-size: 23px;
+    font-weight: 400;
+    top:4px;
+    right: 8px;
+    position: relative;
+}
+.container-fluid{
+    position:sticky;
+}
