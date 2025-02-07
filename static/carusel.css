@@ -18,12 +18,13 @@
     block-size: 1cm;
     
 }
+#------КАРУСЕЛЬ_ПРОПОНУВАННЯ-------
 .block{
     position: relative;
     width: 18cm;
     height: 11.6cm;
     right: 18cm;
-    top: -11.6cm;
+    top: -22.6cm;
     background-color: rgba(3, 3, 3, 0.671);
     border-left: 10cm;
     border-bottom: 10cm;
@@ -54,23 +55,49 @@
     position: relative;
     color: blanchedalmond;
     width:12cm;
-    right: 8cm;
+    right: 16.4cm;
     font-stretch: extra-expanded;
     word-spacing: 0.1cm;
-    top: 1cm;
+    top: -22cm;
     font-size: 1cm;
 }
 .offer1{
     position: relative;
     color: blanchedalmond;
     width:12cm;
-    right: 8cm;
+    right: 16.4cm;
     font-stretch: extra-expanded;
     word-spacing: 0.1cm;
-    top: 1cm;
+    top: -22cm;
 }
 .btn{
     position: relative;
-    top:7cm;
-    right:8cm;
+    top:-15.5cm;
+    right:16.4cm;
+    height: 1.2cm;
+    width:  4.3cm;
+}
+
+.btn_Pelesos{
+    position: relative;
+    top:-1cm;
+}
+
+.d-block{
+    position: relative;
+    height: 11.61cm;
+    width: 16.5cm;
+    left: -0.21cm;
+    border-radius: 0.4cm;
+}
+.PS_5{
+    position: relative;
+    bottom: 13cm;
+    
+}
+.PS5{
+    position: relative;
+    block-size: 11cm;
+    top:1.5cm;
+    left: 3.5cm;
 }
