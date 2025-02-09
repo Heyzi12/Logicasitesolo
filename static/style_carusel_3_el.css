@@ -1,0 +1,97 @@
+
+.ps_anim{
+    position: relative;
+    width: 13cm;
+    height: 15cm;
+    left: 1cm;
+    top: 0.5cm;
+	
+}
+.Ps1{
+    position: relative;
+    width: 16cm;
+    height: 17cm;
+    right: 0.8cm;
+}
+.link1{
+    position: relative;
+    color: aliceblue;
+    font-size: 0.4cm;
+    font-weight: 500;
+    text-decoration: none;
+    top: 0.3cm;
+    
+}
+a:hover{
+    color: rgb(47, 255, 116);
+}
+a:active {
+    color: wheat;
+  }
+.tovar{
+    position: relative;
+    left: 3.5cm;
+
+    
+}
+.borderr{
+    position: relative;
+    border-bottom: 0.1cm solid #3d4861;
+}
+.link2{
+    position: relative;
+    color: aliceblue;
+    text-indent: 1cm;
+    font-size: 0.4cm;
+    font-weight: 500;
+    text-decoration: none;
+    top: 0.3cm;
+}
+.ps{
+    position: relative;
+    right: 1cm;
+}
+.haract{
+    position: relative;
+    left: 7cm;
+    bottom: 0.6cm;
+    
+}
+
+.fon_link{
+    background-color: #353a47;
+}
+
+
+.fonfon{
+    position: relative;
+    width: 35cm;
+    height: 40cm;
+    background-color: #343a4b;
+
+}
+.fon_price{
+    position: relative;
+    height: 12cm;
+    width:15.6cm;
+    bottom:16.5cm;
+    left: 17cm;
+    border-radius: 0.2cm;
+    border: 1px solid #ffffff;
+}
+.price_{
+    position: relative;
+    background-color: #ffffff;
+    height: 2cm;
+    width:2cm;
+ 
+    border-radius: 0.2cm;
+    border: 1px solid #ffffff;
+}
+.name{
+    position: relative;
+    bottom:16.5cm;
+    left: 17cm;
+    font-size: 0.6cm;
+    color: aliceblue;
+}
