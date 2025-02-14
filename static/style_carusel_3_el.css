@@ -79,11 +79,10 @@ a:active {
     border-radius: 0.2cm;
     border: 1px solid #ffffff;
 }
-.price_{
+.price{
     position: relative;
-    background-color: #ffffff;
-    height: 2cm;
-    width:2cm;
+    height: 1cm;
+    width:15.6cm;
  
     border-radius: 0.2cm;
     border: 1px solid #ffffff;
@@ -94,4 +93,62 @@ a:active {
     left: 17cm;
     font-size: 0.6cm;
     color: aliceblue;
+}
+.price_ps{
+    position: relative;
+    top:1cm;
+    color: #ffffff;
+    left: 0.6cm;
+    font-size: 0.7cm;
+}
+.currency{
+    position: relative;
+    top:0.2cm;
+    color: #ffffff;
+    left: 2.7cm;
+    font-size: 0.5cm;
+    font-weight: 400;
+    
+    
+}
+
+.bottom_buy{
+    position: relative;
+    height: 1.3cm;
+    width:14cm;
+    top:0.5cm;
+    left:0.7cm;
+    border-radius: 0.2cm;
+    border: 1px solid #e4dddd;
+    background-color: #01ff568a;
+}
+.have{
+    position: relative;
+    color: #ffffff;
+    bottom: 1cm;
+    font-size: 0.5cm;
+}
+
+.ops{
+    position: relative;
+    height: 3cm;
+    width:14cm;
+    top:3cm;
+    border-radius: 0.2cm;
+    border: 1px solid #ffffff;
+}
+
+.shopping{
+    position: absolute;
+    top:0.1cm;
+    width: 1cm;
+    left: 4.8cm;
+
+}
+.shopping1{
+    position: absolute;
+    top:0.1cm;
+    font-size: 0.7cm;
+    left: 5.8cm;
+    color: #ffffff;
 }

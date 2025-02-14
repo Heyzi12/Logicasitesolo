@@ -27,6 +27,13 @@ def Ps():
     price = db.get_price()
     return render_template("Ps_5_Pro.html", categories=categories , articles = articles , price = price)
 
+@app.route("/Play_Station/haract")    
+def Ps_haract():
+    categories = db.get_categories()
+    articles = db.get_articles()
+    price = db.get_price()
+    return render_template("Ps_5_Pro_haract.html", categories=categories , articles = articles , price = price)
+
 if __name__ == "__main__":
     app.config['TEMPLATES_AUTO_RELOAD'] = True # автоматичне оновлення шаблонів
     app.run(debug=True) # Запускаємо веб-сервер з цього файлу в режимі налагодження
