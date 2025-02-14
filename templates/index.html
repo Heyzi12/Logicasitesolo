@@ -1,48 +1,49 @@
 {% extends 'base.html' %}
 {% block content %}
-<div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    
-    <div class="carousel-item active">
-      
-      <img src="static/img/carusel/Background_Ps.png" class="d-block" alt="...">
-      <div class ="block1"><img src="static/img/carusel/block.jpg" class="block1" alt=""></div>
-        <div class="PS_5"><img src="static/img/carusel/{{articles[0][5]}}" alt="" class="PS5"></div>
-        <div class ="block"><h2 class = "offer">{{articles[0][2]}}</h2><h4 class="offer1">Ігрова приставка</h4><a type="button" href="/Play_Station" class="btn btn-primary btn-lg">Переглянути</a></div>
-      
+<div class ="container">
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
+    <div class="carousel-inner">
+      
+      <div class="carousel-item active">
+        
+        <img src="static/img/carusel/Background_Ps.png" class="d-block" alt="...">
+        <div class ="block1"><img src="static/img/carusel/block.jpg" class="block1" alt=""></div>
+          <div class="PS_5"><img src="static/img/carusel/{{articles[0][5]}}" alt="" class="PS5"></div>
+          <div class ="block"><h2 class = "offer">{{articles[0][2]}}</h2><h3 class="offer1">Ігрова приставка</h3><a type="button" href="/Play_Station" class="btn btn-primary btn-lg">Переглянути</a></div>
+        
+      </div>
 
-    <div class="carousel-item">
-      
-      <img src="static/img/carusel/Background_pelesos.png" class="d-block" alt="...">
-      <div class ="block1"><img src="static/img/carusel/Pelesos_text_background.png" class="block1" alt=""></div>
-        <div class="PS_5"><img src="static/img/carusel/{{articles[1][5]}}" alt="" class="PS5"></div>
-        <div class ="block"><h2 class = "offer">{{articles[1][2]}}</h2><h4 class="offer1">Пилисос</h4><div class="btn_Pelesos"><a type="button" href="#" class="btn btn-primary btn-lg">Переглянути</a></div></div>
-      
-    </div>
+      <div class="carousel-item">
+        
+        <img src="static/img/carusel/Background_pelesos.png" class="d-block" alt="...">
+        <div class ="block1"><img src="static/img/carusel/Pelesos_text_background.png" class="block1" alt=""></div>
+          <div class="PS_5"><img src="static/img/carusel/{{articles[1][5]}}" alt="" class="PS5"></div>
+          <div class ="block"><h2 class = "offer">{{articles[1][2]}}</h2><h4 class="offer1">Пилисос</h4><div class="btn_Pelesos"><a type="button" href="#" class="btn btn-primary btn-lg">Переглянути</a></div></div>
+        
+      </div>
 
-    <div class="carousel-item">
-      
-      <img src="static/img/background_coffe.jpg" class="d-block" alt="...">
-      <div class ="block1"><img src="static/img/background_text_coffe.jpg" class="block1" alt=""></div>
-        <div class="PS_5"><img src="static/img/carusel/{{articles[2][5]}}" alt="" class="PS5"></div>
-        <div class ="block"><h2 class = "offer">{{articles[2][2]}}</h2><h4 class="offer1">Кавомашина</h4><div class="btn_Pelesos"><a type="button" href="#" class="btn btn-primary btn-lg">Переглянути</a></div></div>
-      
-    </div>
+      <div class="carousel-item">
+        
+        <img src="static/img/background_coffe.jpg" class="d-block" alt="...">
+        <div class ="block1"><img src="static/img/background_text_coffe.jpg" class="block1" alt=""></div>
+          <div class="PS_5"><img src="static/img/carusel/{{articles[2][5]}}" alt="" class="PS5"></div>
+          <div class ="block"><h2 class = "offer">{{articles[2][2]}}</h2><h4 class="offer1">Кавомашина</h4><div class="btn_Pelesos"><a type="button" href="#" class="btn btn-primary btn-lg">Переглянути</a></div></div>
+        
+      </div>
 
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
 </div>
-
+</div>
 {% endblock content %}

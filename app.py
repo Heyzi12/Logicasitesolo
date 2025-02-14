@@ -32,7 +32,9 @@ def Ps_haract():
     categories = db.get_categories()
     articles = db.get_articles()
     price = db.get_price()
-    return render_template("Ps_5_Pro_haract.html", categories=categories , articles = articles , price = price)
+    ops = db.get_ops()
+    return render_template ("Ps_5_Pro_haract.html", categories=categories , articles = articles , price = price , ops=ops)
+
 
 if __name__ == "__main__":
     app.config['TEMPLATES_AUTO_RELOAD'] = True # автоматичне оновлення шаблонів

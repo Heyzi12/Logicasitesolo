@@ -1,19 +1,36 @@
-{% extends 'base.html'%}
+{% extends 'base.html' %}
 {% block content %}
-
-    <div class = "Ps">
-        <div class = "borderr">
-            
-            <div class = "fon_link">
-                <div class ="tovar">
-                    <a href="/Play_Station" class="link1">Усе про товар</a>
+<link rel="stylesheet" href="{{ url_for('static', filename = 'style_haract.css')}}">
+<div class = fonfon>
+    <div class="container">
+        <div class = "Ps">
+            <div class = "borderr">
+                
+                <div class = "fon_link">
+                    <div class ="tovar">
+                        <a href="/Play_Station" class="link1">Усе про товар</a>
+                    </div>
+                    <div class = haract> 
+                        <a href="/Play_Station/haract" class="link2">Характеристики</a>
+                    </div>
                 </div>
-                <div class = haract> 
-                    <a href="/Play_Station/haract" class="link2">Характеристики</a>
-                </div>
+                
             </div>
-            
-        </div>
 
+        </div>
+        
+            <div class="opss_name"><h2>Характеристики {{articles[0][1]}}</h2></div>
+            <p class="opss">Процесор --------- {{articles[0][3]}}</>
+            <p  class="opss">Модель --------- <a>{{articles[0][2]}}</a></p>
+            <p  class="opss">Обсяг вбудованої пам'яті --------- <a>{{ops[0][6]}}</a></p>
+            <p class="opss">Максимальна підтримувана роздільна здатність --------- <a>{{ops[0][5]}}</a></p>
+            <p class="opss">Колір --------- <a>{{ops[0][4]}}</a></p>
+            <p class="opss">Вага --------- <a>{{ops[0][8]}}</a></p>
+            <p class="opss">Країна реєстрації бренду --------- <a>{{ops[0][3]}}</a></p>
+            <p class="opss">Гарантія --------- <a>{{ops[0][9]}}</a></p>
+            <p class="opss">Тип --------- <a>{{ops[0][7]}}</a></p>
+            <img class = "img_haract" src="static/img/carusel/{{articles[0][5]}}" alt="">
+
+    </div>
 </div>
 {% endblock content %}

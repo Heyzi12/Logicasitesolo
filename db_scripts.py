@@ -44,3 +44,10 @@ class DBManager():
         data = self.cursor.fetchall()# отримуємо відповідь і зберігаємо у зміну data
         self.conn.close()
         return data
+    
+    def get_ops(self):
+        self.open_db()
+        self.cursor.execute('''SELECT * FROM ops''')
+        data = self.cursor.fetchall()
+        self.conn.close()
+        return data

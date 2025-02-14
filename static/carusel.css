@@ -2,24 +2,45 @@
 
 .carousel-item{
     position: fixed;
-    size: 12cm;
+    size: 15cm;
     width: 19cm;
-    left: 18cm;
+    left: 50%;
+}
+.carousel-inner{
+    position: relative;
+    width: 50cm;
+    right: 2cm;
+    height: 14cm;
 }
 .carousel-indicators{
     right: center;
 }
 .carousel-control-prev{
-    position: absolute;
-    right: 12%;
+    position: relative;
+    margin-left: -4.3cm;
     width: 1.5cm;
+    height: 14cm;
 }
 .carousel-control-prev-icon{
-    position: absolute;
-    
-    block-size: 1cm;
-    
+    position: relative;
+    left: 7.5cm;
+    block-size: 12cm;
+    width: 1cm;
+} 
+.carousel{
+    position: relative;
+    width: 50cm;
+    right: 5cm;
+    height: 14cm;
 }
+
+.carousel-control-next-icon{
+    position: relative;
+    block-size: 12cm;
+    left: 3.5cm;
+    width: 1cm;
+}
+    
 #------КАРУСЕЛЬ_ПРОПОНУВАННЯ-------
 .block{
     position: relative;
@@ -36,17 +57,11 @@
     border-bottom-left-radius: 2cm;
     
 }
-.carousel-inner{
-    position: relative;
-    height: 12cm;
-    width: 12cm;
-    
-}
 
 .block1{
     position:absolute;
-    width: 18cm;
-    height: 11.6cm;
+    width: 24cm;
+    height: 14cm;
     right: 9.5cm;
     top: 0cm;
     border-top-left-radius: 2cm;
@@ -56,28 +71,30 @@
 .offer{
     position: relative;
     color: blanchedalmond;
-    width:12cm;
-    right: 16.4cm;
+    width:16cm;
+    right: 22.4cm;
     font-stretch: extra-expanded;
     word-spacing: 0.1cm;
-    top: -22cm;
-    font-size: 1cm;
+    top: -26cm;
+    font-size: 1.5cm;
 }
 .offer1{
     position: relative;
     color: blanchedalmond;
-    width:12cm;
-    right: 16.4cm;
+    width:14cm;
+    right: 22.4cm;
     font-stretch: extra-expanded;
     word-spacing: 0.1cm;
-    top: -22cm;
+    top: -26cm;
 }
 .btn{
     position: relative;
-    top:-15.5cm;
-    right:16.4cm;
-    height: 1.2cm;
-    width:  4.3cm;
+    top:-19.5cm;
+    right:22.4cm;
+    height: 2cm;
+    width:  6cm;
+    font-size: 0.85cm;
+    line-break: 1cm;
 }
 
 .btn_Pelesos{
@@ -87,8 +104,8 @@
 
 .d-block{
     position: relative;
-    height: 11.61cm;
-    width: 16.5cm;
+    height: 14cm;
+    width: 24cm;
     left: -0.21cm;
     border-radius: 0.4cm;
 }
@@ -99,7 +116,7 @@
 }
 .PS5{
     position: relative;
-    block-size: 11cm;
-    top:1.5cm;
-    left: 3.5cm;
+    block-size: 13cm;
+    bottom: 0.4cm;
+    left: 6cm;
 }
