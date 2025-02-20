@@ -35,6 +35,35 @@ def Ps_haract():
     ops = db.get_ops()
     return render_template ("Ps_5_Pro_haract.html", categories=categories , articles = articles , price = price , ops=ops)
 
+@app.route("/BOSCH_BGS05X240")
+def Bosch():
+    categories = db.get_categories()
+    articles = db.get_articles()
+    price = db.get_price()
+    return render_template ("BOSCH_BGS05X240.html", categories=categories , articles = articles , price = price)
+
+@app.route("/BOSCH_BGS05X240/haract")    
+def Bosch_haract():
+    categories = db.get_categories()
+    articles = db.get_articles()
+    price = db.get_price()
+    ops = db.get_ops()
+    return render_template ("BOSCH_BGS05X240_haract.html", categories=categories , articles = articles , price = price , ops=ops)
+
+@app.route("/Beko_CEG7304X")
+def BEko():
+    categories = db.get_categories()
+    articles = db.get_articles()
+    price = db.get_price()
+    return render_template ("Beko_CEG7304X.html", categories=categories , articles = articles , price = price)
+
+@app.route("/Beko_CEG7304X/haract")    
+def BEko_haract():
+    categories = db.get_categories()
+    articles = db.get_articles()
+    price = db.get_price()
+    ops = db.get_ops()
+    return render_template ("Beko_CEG7304X_haract.html", categories=categories , articles = articles , price = price , ops=ops)
 
 if __name__ == "__main__":
     app.config['TEMPLATES_AUTO_RELOAD'] = True # автоматичне оновлення шаблонів

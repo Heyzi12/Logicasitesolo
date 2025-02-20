@@ -12,3 +12,14 @@ body{
 .container-sm{
     position: relative;
 }
+.card-img-top{
+    position: relative;
+    height: 6cm;
+    width: 5cm;
+    left: 1.3cm;
+}
+.card{
+    position: relative;
+    left:3cm;
+    top:0.5cm;
+}

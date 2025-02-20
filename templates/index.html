@@ -23,7 +23,7 @@
         <img src="static/img/carusel/Background_pelesos.png" class="d-block" alt="...">
         <div class ="block1"><img src="static/img/carusel/Pelesos_text_background.png" class="block1" alt=""></div>
           <div class="PS_5"><img src="static/img/carusel/{{articles[1][5]}}" alt="" class="PS5"></div>
-          <div class ="block"><h2 class = "offer">{{articles[1][2]}}</h2><h4 class="offer1">Пилисос</h4><div class="btn_Pelesos"><a type="button" href="#" class="btn btn-primary btn-lg">Переглянути</a></div></div>
+          <div class ="block"><h2 class = "offer">{{articles[1][2]}}</h2><h4 class="offer1">Пилисос</h4><div class="btn_Pelesos"><a type="button" href="/BOSCH_BGS05X240" class="btn btn-primary btn-lg">Переглянути</a></div></div>
         
       </div>
 
@@ -32,7 +32,7 @@
         <img src="static/img/background_coffe.jpg" class="d-block" alt="...">
         <div class ="block1"><img src="static/img/background_text_coffe.jpg" class="block1" alt=""></div>
           <div class="PS_5"><img src="static/img/carusel/{{articles[2][5]}}" alt="" class="PS5"></div>
-          <div class ="block"><h2 class = "offer">{{articles[2][2]}}</h2><h4 class="offer1">Кавомашина</h4><div class="btn_Pelesos"><a type="button" href="#" class="btn btn-primary btn-lg">Переглянути</a></div></div>
+          <div class ="block"><h2 class = "offer">{{articles[2][2]}}</h2><h4 class="offer1">Кавомашина</h4><div class="btn_Pelesos"><a type="button" href="/Beko_CEG7304X" class="btn btn-primary btn-lg">Переглянути</a></div></div>
         
       </div>
 
@@ -44,6 +44,17 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+</div>
+</div>
+  {% for article in articles %}
+  <div class = "d-flex flex-wrap justify-content-center gap-3">
+    <div class="card" style="width: 18rem;">
+      <img src="{{url_for('static', filename='img/' + article[5])}}" class="card-img-top" alt="...">
+      <div class="card-body">
+      <p class="card-text"><a href="">{{article[1]}}</a></p>
+    </div>
+  </div>
+  {% endfor %}
 </div>
 </div>
 {% endblock content %}

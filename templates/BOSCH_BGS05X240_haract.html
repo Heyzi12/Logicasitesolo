@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'style_haract.css')}}">
+<div class = fonfon>
+    <div class="container">
+        <div class = "Ps">
+            <div class = "borderr">
+                
+                <div class = "fon_link">
+                    <div class ="tovar">
+                        <a href="/Beko_CEG7304X" class="link1">Усе про товар</a>
+                    </div>
+                    <div class = haract> 
+                        <a href="/BOSCH_BGS05X240/haract" class="link2">Характеристики</a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        
+            <div class="opss_name"><h2>Характеристики {{articles[1][1]}}</h2></div>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p class="opss">Тип прибирання --------- {{ops[1][1]}}</>
+            <p  class="opss">Модель --------- <a>{{articles[1][2]}}</a></p>
+            <p  class="opss">Додаткові насадки --------- <a>{{ops[1][2]}}</a></p>
+            <p class="opss">Габарити (ВхШхГ) --------- <a>{{ops[1][5]}}</a></p>
+            <p class="opss">Колір --------- <a>{{ops[1][4]}}</a></p>
+            <p class="opss">Вага --------- <a>{{ops[1][8]}}</a></p>
+            <p class="opss">Країна реєстрації бренду --------- <a>{{ops[1][3]}}</a></p>
+            <p class="opss">Гарантія --------- <a>{{ops[1][9]}}</a></p>
+            <p class="opss">Тип трубки --------- <a>{{ops[1][7]}}</a></p>
+            <p class="opss">Довжина шнура --------- <a>{{ops[1][6]}}</a></p>
+            <img class = "img_haract" src="static/img/carusel/{{articles[1][5]}}" alt="">
+
+    </div>
+</div>
+{% endblock content %}

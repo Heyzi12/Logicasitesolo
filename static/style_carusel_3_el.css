@@ -103,17 +103,45 @@ a:active {
     left: 0.6cm;
     font-size: 0.7cm;
 }
+.price_ps_1{
+    position: relative;
+    top:1.2cm;
+    color: #ffffff;
+    left: 1.2cm;
+    font-size: 0.56cm;
+    color: #ff5050f1;
+}
 .currency{
     position: relative;
-    top:0.2cm;
+    top:0.3cm;
     color: #ffffff;
     left: 2.7cm;
-    font-size: 0.5cm;
+    font-size: 0.4cm;
     font-weight: 400;
     
     
 }
 
+.currency1{
+    position: relative;
+    top:-0.1cm;
+    color: #ffffff;
+    left: 2.7cm;
+    font-size: 0.45cm;
+    font-weight: 400;
+    
+    
+}
+
+.zniska{
+    position: relative;
+    color: #ffffff;
+    top:0.04cm;
+    left: 0.2cm;
+    font-size: 0.4cm;
+    text-decoration: line-through;
+    
+}
 .bottom_buy{
     position: relative;
     height: 1.3cm;
@@ -138,6 +166,10 @@ a:active {
     top:3cm;
     border-radius: 0.2cm;
     border: 1px solid #ffffff;
+    text-align: center;
+    font-size: 0.5cm;
+    color: #ffffff;
+
 }
 
 .shopping{
@@ -170,4 +202,15 @@ a:active {
 .Ps_5_proo{
     position: relative;
     width: 15cm;
+}
+
+.Pr{
+    position: absolute;
+    top:0.1cm;
+    font-size: 0.5cm;
+    color: #ffffff;
+}
+.Rozetka{
+    position: relative;
+    width: 4cm;
 }
