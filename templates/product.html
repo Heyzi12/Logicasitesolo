@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+    
+    <div class="fonfon">
+        <div class="container">
+            <div class = "Ps">
+                <div class = "borderr">
+                    
+                    <div class = "fon_link">
+                        <div class ="tovar">
+                            <a href="/Beko_CEG7304X" class="link1">Усе про товар</a>
+                        </div>
+                        <div class = haract> 
+                            <a href="/Beko_CEG7304X/haract" class="link2">Характеристики</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class = "Ps1">
+                    <img src="{{url_for('static', filename='img/' + article[5])}}" alt="" class="ps_anim">
+                </div>
+            </div>
+            <div class = "name">{{article[1]}}</div>
+            <div class = "fon_price">
+                <div class = "price">
+                    <div class = "Pr">Продавець: <img src="static/img/carusel/Ops_PS_5/Rozetka.svg"  class = "Rozetka" alt=""></div>
+                    <div class = "price_ps_1">{{price[1]}}</div><div class = "zniska">{{price[2]}}</div><b class="currency1"></b>
+                    <div class = "bottom_buy" type="button">
+                        <img src="static/img/Shopping-Cart-1--Streamline-Ultimate.png" alt="" class="shopping">
+                        <p class="shopping1">
+                            Купити
+                        </p>
+                        <div class="ops">
+                            <p class = "have">Також є у магазинах :</p>
+                            наразі ця опція розробляється
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class = "Ps_5_pro_zag">
+                    <img src="static/img/carusel/Ops/Ps_5_proo.png" alt="" class="Ps_5_proo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+{% endblock content %}

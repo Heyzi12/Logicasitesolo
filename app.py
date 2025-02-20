@@ -65,6 +65,13 @@ def BEko_haract():
     ops = db.get_ops()
     return render_template ("Beko_CEG7304X_haract.html", categories=categories , articles = articles , price = price , ops=ops)
 
+@app.route("/<int:product_id>")
+def product_page(product_id):
+    categories = db.get_categories()
+    article = db.get_article_by_id(product_id)
+    price = db.get_price_by_id(article[8])
+    return render_template ("product.html", categories=categories , article = article , price = price)
+
 if __name__ == "__main__":
     app.config['TEMPLATES_AUTO_RELOAD'] = True # автоматичне оновлення шаблонів
     app.run(debug=True) # Запускаємо веб-сервер з цього файлу в режимі налагодження

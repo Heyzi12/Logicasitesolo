@@ -31,6 +31,13 @@ class DBManager():
         self.conn.close()
         return data
     
+    def get_price_by_id(self, price_id):
+        self.open_db()
+        self.cursor.execute('''SELECT * FROM price WHERE id=?''',[price_id])
+        data = self.cursor.fetchone()
+        self.conn.close()
+        return data
+
     def get_users(self):
         self.open_db()
         self.cursor.execute('''SELECT * FROM users''')
@@ -49,5 +56,12 @@ class DBManager():
         self.open_db()
         self.cursor.execute('''SELECT * FROM ops''')
         data = self.cursor.fetchall()
+        self.conn.close()
+        return data
+    
+    def get_article_by_id(self, article_id):
+        self.open_db()
+        self.cursor.execute('''SELECT * FROM articles WHERE id=?''', [article_id])# виконуємо запит
+        data = self.cursor.fetchone()# отримуємо відповідь і зберігаємо у зміну data
         self.conn.close()
         return data
