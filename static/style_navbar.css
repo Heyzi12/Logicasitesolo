@@ -44,6 +44,6 @@
     right: 8px;
     position: relative;
 }
-.container-fluid{
-    position:sticky;
+.navbar{
+    position: sticky;
 }
