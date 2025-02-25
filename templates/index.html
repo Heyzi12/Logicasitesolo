@@ -51,7 +51,7 @@
     <div class="card" style="width: 18rem;">
       <img src="{{url_for('static', filename='img/' + article[5])}}" class="card-img-top" alt="...">
       <div class="card-body">
-      <p class="card-text"><a href="">{{article[1]}}</a></p>
+      <p class="card-text"><a href="{{url_for('product_page', product_id=article[0])}}">{{article[1]}}</a></p>
     </div>
   </div>
   {% endfor %}

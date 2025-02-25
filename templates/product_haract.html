@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'style_haract.css')}}">
+<div class = fonfon>
+    <div class="container">
+        <div class = "Ps">
+            <div class = "borderr">
+                
+                <div class = "fon_link">
+                    <div class ="tovar">
+                        <a href="{{url_for('product_page', product_id=article[0])}}" class="link1">Усе про товар</a>
+                    </div>
+                    <div class = haract> 
+                        <a href="/BOSCH_BGS05X240/haract" class="link2">Характеристики</a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        
+            <div class="opss_name"><h2>Характеристики {{article[1]}}</h2></div>
+            <p></p>
+            <p></p>
+            <p></p>
+
+            <p  class="opss">Обсяг вбудованої пам'яті --------- <a>{{article[1]}}</a></p>
+            <p class="opss">Максимальна підтримувана роздільна здатність --------- <a>{{ops[5]}}</a></p>
+            <p class="opss">Колір --------- <a>{{ops[4]}}</a></p>
+            <p class="opss">Вага --------- <a>{{ops[8]}}</a></p>
+            <p class="opss">Країна реєстрації бренду --------- <a>{{ops[3]}}</a></p>
+            <p class="opss">Гарантія --------- <a>{{ops[9]}}</a></p>
+            <p class="opss">Тип --------- <a>{{ops[0][7]}}</a></p>
+    </div>
+</div>
+{% endblock content %}

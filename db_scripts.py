@@ -65,3 +65,10 @@ class DBManager():
         data = self.cursor.fetchone()# отримуємо відповідь і зберігаємо у зміну data
         self.conn.close()
         return data
+    
+    def get_ops_by_id(self, ops_id):
+        self.open_db()
+        self.cursor.execute('''SELECT * FROM articles WHERE ops_id=?''', [ops_id])
+        data = self.cursor.fetchone()
+        self.conn.close()
+        return data
