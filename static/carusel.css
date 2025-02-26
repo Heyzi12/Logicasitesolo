@@ -59,11 +59,11 @@
 }
 
 .block1{
-    position:absolute;
+    position:relative;
     width: 24cm;
     height: 14cm;
-    right: 9.5cm;
-    top: 0cm;
+    right: 12cm;
+    top: -7cm;
     border-top-left-radius: 2cm;
     border-bottom-left-radius: 2cm;
 }
@@ -75,7 +75,7 @@
     right: 22.4cm;
     font-stretch: extra-expanded;
     word-spacing: 0.1cm;
-    top: -26cm;
+    top: -40.5cm;
     font-size: 1.5cm;
 }
 .offer1{
@@ -85,11 +85,11 @@
     right: 22.4cm;
     font-stretch: extra-expanded;
     word-spacing: 0.1cm;
-    top: -26cm;
+    top: -40.5cm;
 }
 .btn{
     position: relative;
-    top:-19.5cm;
+    top:-33.5cm;
     right:22.4cm;
     height: 2cm;
     width:  6cm;
@@ -117,6 +117,6 @@
 .PS5{
     position: relative;
     block-size: 13cm;
-    bottom: 0.4cm;
+    bottom: 14.5cm;
     left: 6cm;
 }

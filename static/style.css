@@ -23,3 +23,6 @@ body{
     left:3cm;
     top:0.5cm;
 }
+.dropdown-menu{
+    position: absolute;
+}

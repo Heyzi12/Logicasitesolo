@@ -47,7 +47,7 @@ class DBManager():
     
     def get_articles_by_category(self, categori_id):
         self.open_db()
-        self.cursor.execute('''SELECT * FROM articles WHERE category_id=?''', [categori_id])# виконуємо запит
+        self.cursor.execute('''SELECT * FROM articles WHERE id=?''', [categori_id])# виконуємо запит
         data = self.cursor.fetchall()# отримуємо відповідь і зберігаємо у зміну data
         self.conn.close()
         return data

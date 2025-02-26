@@ -79,6 +79,14 @@ def ops_page(product_id, ops_id):
     ops = db.get_ops_by_id(ops_id)
     return render_template ("product_haract.html", categories = categories , article = article , ops = ops)
 
+@app.route("/category/<int:category_id>")
+def category_page(category_id, product_id):
+    
+    categories = db.get_categories(category_id)
+    articles = db.get_articles_by_category(product_id)
+    print(categories)
+    return render_template("category.html", categories=categories , articles=articles , category_name = categories[category_id][1])
+
 if __name__ == "__main__":
     app.config['TEMPLATES_AUTO_RELOAD'] = True # автоматичне оновлення шаблонів
     app.run(debug=True) # Запускаємо веб-сервер з цього файлу в режимі налагодження
